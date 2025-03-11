@@ -1,0 +1,64 @@
+p {
+  background-color: #4e75ff;
+  width: 90px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+p a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+p:hover {
+  background-color: #5f90ff;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 360px;
+}
+
+input[name='email'],
+input[name='password'] {
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  padding: 8px 0px 8px 16px;
+  margin-top: 8px;
+}
+
+input[name='email']:hover,
+input[name='password']:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+input[name='email']:focus,
+input[name='password']:focus {
+  border: 1px solid rgb(128, 128, 128);
+  outline: none;
+}
+
+.login-form button {
+  width: 86px;
+  border-radius: 8px;
+  background: rgb(78, 117, 255);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px 16px;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: rgb(108, 140, 255);
+}

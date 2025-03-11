@@ -1,0 +1,48 @@
+.item {
+  width: 392px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgb(246, 246, 254);
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  color: rgb(46, 47, 66);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.item li {
+  padding: 8px 0 8px 16px;
+  box-sizing: border-box;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  color: rgb(46, 47, 66);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+p {
+  background-color: #4e75ff;
+  width: 90px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+p a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+p:hover {
+  background-color: #5f90ff;
+}

@@ -1,0 +1,81 @@
+p {
+  background-color: #4e75ff;
+  width: 90px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+p a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+p:hover {
+  background-color: #5f90ff;
+}
+
+#controls input {
+  width: 150px;
+  padding: 8px 0;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  color: rgb(46, 47, 66);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+#controls {
+  border-radius: 8px;
+  background: rgb(246, 246, 254);
+  padding: 32px;
+  width: 496px;
+  margin-bottom: 16px;
+}
+
+#controls button {
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#controls button[data-create] {
+  background-color: #4e75ff;
+  margin: 0px 16px;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  border-radius: 8px;
+  background: rgb(246, 246, 254);
+  padding: 32px;
+}
+
+.boxes-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  row-gap: 44px;
+}
