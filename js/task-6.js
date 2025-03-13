@@ -23,24 +23,28 @@ const destroy = document.querySelector('[data-destroy]');
 const quantityInput = document.querySelector("input[type='number']");
 
 function createBoxes(amount) {
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < amount; i += 1) {
     const box = document.createElement('div');
     box.style.width = `${30 + i * 10}px`;
     box.style.height = `${30 + i * 10}px`;
     box.style.backgroundColor = getRandomHexColor();
 
-    boxesField.appendChild(box);
+    fragment.appendChild(box);
   }
+  boxesField.appendChild(fragment);
 }
 
 create.addEventListener('click', () => {
-  let quantity = quantityInput.value;
-  if (quantity >= 1 && quantity <= 100) {
+  let quantity = parseInt(quantityInput.value.trim(), 10);
+
+  if (!isNaN(quantity) && quantity >= 1 && quantity <= 100) {
     boxesField.innerHTML = '';
-    createBoxes(quantity);
+    createBoxes(Number(quantity));
     quantityInput.value = '';
   } else {
-    alert('Type a number between 1 and 100');
+    alert('Please enter a valid number between 1 and 100.');
   }
 });
 
